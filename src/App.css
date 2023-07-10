@@ -1,0 +1,302 @@
+body{
+    overflow: hidden;
+}
+.App {
+    text-align: center;
+}
+.home {
+    justify-content: center;
+}
+
+/* ------------------------------------------------------------------------------------------------------- */
+/* Sidebar  css */
+
+.nav-sidebar {
+    width: 5%;
+}
+.nav-sidebar .leftSideswitch .calenderSymbol .calendericon .uni {
+    font-size: 11px;
+    margin-left: 10px;
+}
+.nav-sidebar .leftSideswitch {
+    background-color: #f1f1f1;
+    height: 100vh;
+}
+
+.nav-sidebar .leftSideswitch .calenderSymbol {
+    color: #666c72;
+    font-size: 12px;
+}
+
+.nav-sidebar .leftSideswitch .calenderSymbol .calendericon {
+    display: flex;
+    flex-direction: column;
+    text-decoration: none;
+    color: black;
+    padding: 14px 0px 14px 0px;
+}
+
+.nav-sidebar .leftSideswitch .calenderSymbol .calendericon svg {
+    display: flex;
+    flex-direction: column;
+    font-size: 19px;
+    margin: 0px 0px 3px 21px;
+}
+
+.nav-sidebar .leftSideswitch .calenderSymbol :hover{
+    background-color: white;
+}
+
+
+
+/* Chat Icon */
+.nav-sidebar .leftSideswitch .calenderSymbol .chatIcon {
+    display: flex;
+    flex-direction: column;
+    text-decoration: none;
+    color: black;
+    padding: 14px 0px 14px 0px;
+    /* background-color: antiquewhite; */
+}
+.nav-sidebar .leftSideswitch .calenderSymbol .chatIcon .uni {
+    font-size: 11px;
+    margin-left: 17px;
+}
+
+.nav-sidebar .leftSideswitch .calenderSymbol .chatIcon svg {
+    display: flex;
+    flex-direction: column;
+    font-size: 19px;
+    margin: 0px 0px 3px 21px;
+}
+
+/* ----------------------------------------------------------------------------------------------------- */
+
+
+
+/* //Total chat Box size handling from here  */
+.home .container{
+    border-bottom: 1px solid white;
+    display: flex;
+    background-color: #414495;
+    padding: 15px;
+    color: white;
+    font-weight: 600;
+
+}
+
+.home .container #username {
+    float: left;
+    margin-left: 10%;
+}
+.home .block {
+    display: flex;
+    background-color: #e3e3e38c;
+    border-right: 1px solid #ededed;
+
+}
+
+.home .block .shedule-of-calendar {
+    width: 100%;
+    height: 100vh;
+    background-color: #f5f5f5;
+} 
+
+.home .block .shedule-of-calendar {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+.home .block .shedule-of-calendar .currMoment .heading {
+    display: flex;
+    color: aliceblue;
+    padding: 7px;
+} 
+
+.home .block .shedule-of-calendar .currMoment .heading #user {
+    color: #272b9c;
+    margin-left: 45px;
+    margin-top: 18px;
+    background-color: #eaeaea;
+    /* box-shadow: 2px 3px 25px 2px white; */
+}
+.home .block .currMoment {
+    background-color: #eaeaea;
+    height: 19vh;
+}
+
+.home .block .currMoment .user-time{
+    display: flex;
+}
+
+.home .block .currMoment #today {
+    margin-left: 23px;
+    font-size: 22px;
+    font-weight: 500;
+}
+
+.home .block .shedule-of-calendar .currMoment #demo {
+    color:"black";
+    font-weight: 700;
+    padding-left: 21px;
+    display: block;
+    margin: auto;
+}
+
+
+.home .block .shedule-of-calendar .heading svg {
+    background-color: #5c61d8;
+    border-radius: 3px;
+    font-size: 22px;
+    margin: 13px 11px 11px 16px;
+    padding: 5px 5px;
+}
+
+.home .block .shedule-of-calendar .heading #cal {
+    color: black;
+    font-size: 19px;
+    font-weight: 700;
+    margin-top: 17px;
+}    
+
+
+.home .block .shedule-of-calendar .Calendershedule .free-slot {
+    background-color: #ffffff;
+}
+.home .block .shedule-of-calendar .Calendershedule .fc-direction-ltr {
+    height: 81vh;
+    overflow: hidden;
+}
+/* Calender style */
+.home .block .shedule-of-calendar .Calendershedule .fc .fc-toolbar.fc-header-toolbar {
+    display: none;
+}
+
+.fc .fc-col-header-cell-cushion {
+    color: #5c61d8;
+}
+
+.fc-scrollgrid-sync-table{
+    display: none;
+}
+
+.fc-scrollgrid-section-header {
+    display: none;
+}
+
+.home .block .shedule-of-calendar .Calendershedule .free-slot .fc .fc-timegrid-slot {
+    height: 3.5em;
+    background-color: white;
+}
+
+.home .block .shedule-of-calendar .Calendershedule .free-slot .fc .fc-timegrid-slot-lane {
+    background-color: #f5fff8;
+}
+
+.home .block .shedule-of-calendar .Calendershedule .free-slot .fc .fc-timegrid-slot-label {
+    background-color: rgb(230 230 230)
+}
+
+.home .block .shedule-of-calendar .Calendershedule a.fc-event {
+    margin-right: -27px;
+}
+.home .block .shedule-of-calendar .Calendershedule .fc-theme-standard td, .fc-theme-standard th {
+    border: 1px solid #bbbbbb;
+}
+
+
+
+/* ---------------------------------------------------------------------------------------------------- */
+
+h2 {
+    margin: 0;
+    font-size: 16px;
+}
+
+ul {
+    margin: 0;
+    padding: 0 0 0 1.5em;
+}
+
+li {
+    margin: 1.5em 0;
+    padding: 0;
+}
+
+b {
+/* used for event dates/times */
+    margin-right: 3px;
+}
+
+.demo-app {
+    display: flex;
+    min-height: 100%;
+    font-family: Arial, Helvetica Neue, Helvetica, sans-serif;
+    font-size: 14px;
+}
+
+.demo-app-sidebar {
+    /* width: 300px; */
+    line-height: 1.5;
+    /* background: #eaf9ff; */
+    border-right: 1px solid #d3e2e8;
+}
+
+.demo-app-sidebar-section {
+    padding: 2em;
+}
+
+.demo-app-main {
+    flex-grow: 1;
+    padding: 3em;
+    /* background-color: rgb(240, 224, 255); */
+}
+
+.fc {
+    /* the calendar root */
+    /* max-width: 1100px; */
+    margin: 0 auto;
+    /* background-color: rgb(143, 255, 144); */
+}
+
+.current_time_slot {
+    color: #2d3d39;
+    text-align: center;
+}
+.current_time_slot .time{
+    margin: 7px;
+    float: left;
+    bottom: 0;
+    font-weight: 700;
+    font-size: 14px;
+}
+.current_time_slot h3{
+    font-size: 16px;
+    margin-top: 5px;
+    position: absolute;
+    text-align: center;
+    left: 48%;
+}
+
+.fc-timegrid-event .fc-event-main {
+    padding: 1px 1px 0;
+    position: relative;
+}
+
+.fc .fc-timegrid-slot-label {
+    vertical-align: top;
+}
+
+.fc-direction-ltr .fc-timegrid-slot-label-frame {
+    text-align: right;
+    top: 24%;
+    margin-top: -29px;
+}
+
+
+
+
+
+
+
+
